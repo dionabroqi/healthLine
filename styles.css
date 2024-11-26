@@ -110,7 +110,30 @@
                                     
                                     
                  }
-                                
+                 .home .content{
+    
+                    max-width: 60rem;
+                    text-align: center;
+            }
+
+                    .home .content h3{
+                    font-size:4rem ;
+                    text-transform:uppercase;
+                    color:rgb(97, 69, 69);
+                    
+                    padding-bottom: 3.5rem;
+ }
+ .about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    
+    }
+    .about .row .content{
+    flex: 1 1 40rem;
+    }
+
                             
                         
                     
