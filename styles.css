@@ -133,7 +133,17 @@
     .about .row .content{
     flex: 1 1 40rem;
     }
-
+    .about .row .content h3{
+        font-size: 3.5rem;
+        color: var(--black);
+    text-transform: uppercase;
+    }
+    .about .row .content p{
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+    padding: 2rem 0;
+    line-height: 2;
+}
                             
                         
                     
