@@ -64,7 +64,7 @@
                     
                     }
                     .header{
-                    position:fixed;
+                    position:static;
                     top: 0;
                     left:0;
                     right: 0;
@@ -136,7 +136,7 @@
     .about .row .content h3{
         font-size: 3.5rem;
         color: var(--black);
-    text-transform: uppercase;
+    text-transform:none;
     }
     .about .row .content p{
     font-size: 1.6rem;
