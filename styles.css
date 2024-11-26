@@ -30,5 +30,20 @@
             html ::-webkit-scrollbar-track{
                 background: var(--primary);
                 
-                }
+         }
+         html ::-webkit-scrollbar-thumb{
+            background: var(--brown);
+        } 
+        section{
+            padding: 3rem 9%;
+            }
+            .heading{
+                text-align: center;
+                color: var(--main-color);
+                text-transform: uppercase;
+                margin-bottom: 4rem;
+                margin-top: 2rem;
+                font-size: 4rem;
+            }
+                        
                 
