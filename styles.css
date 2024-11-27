@@ -1,6 +1,6 @@
 :root{
     --main-color:#5a3117;
-    --primary:#ceb39d;   
+    --primary:#e8d5c5;   
     --brown:#5f4334;
     --lightbrown:#855757;
     --bg:#f2f2f2;
@@ -124,9 +124,10 @@
                     padding-bottom: 3.5rem;
  }
  .about {
-    background-color: #e6d4b3; /* Zëvendësoje me ngjyrën që dëshironi */
+    background-color: #f0e5d0; 
     padding: 5rem 9%;
 }
+
 
 
 
@@ -161,7 +162,8 @@
  }
 
  .services {
-    background: var(--bg);
+    background-color: #e6d4b3; 
+    padding: 5rem 9%;
 }
 
 .services .box-container {
@@ -387,5 +389,8 @@ body, .slider, .slide-content {
     color: var(--brown);
     margin-top: 1rem;
 }                           
-                        
+           .diet{
+            background-color: #f2ede3; 
+            padding: 5rem 9%;
+           }             
                     
