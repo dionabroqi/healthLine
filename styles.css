@@ -153,6 +153,232 @@
     width: 100%;
  }
 
-                            
+ .services {
+    background: var(--bg);
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 3rem;
+    background: var(--white);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+}
+
+.services .box-container .box:hover,
+.services .box-container .box:hover .icon {
+    background: var(--primary);
+}
+
+.services .box-container .box .icon {
+    width: 10rem;
+    height: 13rem;
+    line-height: 13rem;
+    background: var(--white);
+    border-radius: 50%;
+    margin: -11rem auto 2rem;
+    border: 1.8rem solid var(--bg);
+}
+
+.services .box-container .box .icon img {
+    width: 15rem;
+    margin-top: 0;
+}
+
+.services .box-container .box .content h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--main-color);
+}
+
+.services .box-container .box .content .line {
+    background: var(--main-color);
+    width: 30%;
+    height: 0.4rem;
+    margin: 2rem auto;
+    border-radius: 5rem;
+}
+
+.services .box-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+.services .box-container .box .content ul {
+    margin: 2rem 0;
+    list-style-type: none;
+}
+
+.services .box-container .box .content ul li {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+.services .box-container .box .content ul li i {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.services .box-container .box .icon {
+    width: 10rem; /* Madhësia e ikonës */
+    height: 10rem; /* Bëhet katror për të formuar rrethin */
+    background: var(--white); /* Ngjyra e sfondit për ikonën */
+    border-radius: 50%; /* Formon një rreth */
+    margin: 0 auto 2rem; /* Qendron në mes dhe shton hapësirë poshtë */
+    display: flex; /* Për të qendruar imazhin në qendër */
+    align-items: center; /* Vendos në qendër vertikalisht */
+    justify-content: center; /* Vendos në qendër horizontalisht */
+    border: 1.8rem solid var(--bg); /* Kufiri për stil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hije për theksim */
+}
+
+.services .box-container .box .icon img {
+    width: 100%; /* E mbush plotësisht ikonën */
+    height: 100%; /* E ruan proporcionin */
+    object-fit: cover; /* Siguron që imazhi të mbulojë rrethin */
+    border-radius: 50%; /* Imazhi bëhet rrethor */
+}
+
+
+/* Slider general styles */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slide img {
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    width: 40%;
+    padding-left: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.text h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Slider buttons */
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider::after {
+    content: none;
+}
+
+body, .slider, .slide-content {
+    margin: 0;
+    padding: 0;
+}
+/* Meal Section Styling */
+.meal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.meal-img-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meal-box {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 28rem;
+    transition: transform 0.3s ease;
+}
+
+.meal-box:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.meal-box .meal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 0.2rem solid var(--primary);
+}
+
+.meal-box .meal-content {
+    padding: 2rem;
+}
+
+.meal-box .meal-description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--brown);
+    margin-top: 1rem;
+}                           
                         
                     
