@@ -123,6 +123,13 @@
                     
                     padding-bottom: 3.5rem;
  }
+ .about {
+    background-color: #e6d4b3; /* Zëvendësoje me ngjyrën që dëshironi */
+    padding: 5rem 9%;
+}
+
+
+
  .about .row{
     display: flex;
     flex-wrap: wrap;
