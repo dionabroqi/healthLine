@@ -162,7 +162,7 @@
  }
 
  .services {
-    background-color: #e6d4b3; 
+    background-color:#f0e5d0 ; 
     padding: 5rem 9%;
 }
 
@@ -390,7 +390,9 @@ body, .slider, .slide-content {
     margin-top: 1rem;
 }                           
            .diet{
-            background-color: #f2ede3; 
-            padding: 5rem 9%;
-           }             
+           
+                background-color:#f0e5d0 ; 
+                padding: 5rem 9%;
+            }
+                  
                     
