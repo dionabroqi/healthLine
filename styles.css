@@ -126,7 +126,9 @@
  .about {
     background-color: #f0e5d0; 
     padding: 5rem 9%;
+    position: relative; 
 }
+
 
 
 
@@ -395,4 +397,39 @@ body, .slider, .slide-content {
                 padding: 5rem 9%;
             }
                   
-                    
+            /* Për pozicionimin e butonit në fund dhe djathtas */
+
+
+
+.about .btn-container {
+    position:inherit;
+    top: 3rem; /* Largësia nga pjesa e sipërme */
+    right:2%; /* Largësia nga ana e djathtë */
+    z-index: 2; /* Siguron që butoni të jetë mbi fotografinë */
+}
+
+.about .btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: .2rem solid var(--lightbrown);
+    border-radius: 9rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--brown);
+    background-color: var(--primary);
+}
+
+.about .btn:hover {
+    background: var(--lightbrown);
+    color: var(--white);
+}
+
+.about .image {
+    position:right;
+}
+
+.about .row .image img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+}
