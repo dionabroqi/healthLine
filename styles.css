@@ -379,6 +379,77 @@ body, .slider, .slide-content {
     font-weight: 500;
     color: var(--brown);
     margin-top: 1rem;
-}                           
+}     
+/* pricing */
+.pricing{
+    background: var(--bg);
+    padding-bottom: 8rem;
+}
+.pricing .box-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+.pricing .box-container .box{
+    height: 52rem;
+    width: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: var(--white);
+}
+.pricing .box-container .active{
+    background: var(--primary);
+    transform: scale(1.1);
+}
+.pricing .box-container .title{
+    margin: 3rem 0;
+    font-size: 2.2rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.pricing .box-container .box .price{
+    color: var(--main-color);
+    margin-bottom: 5rem;
+}
+.pricing .box-container .box .price .currency{
+    font-size: 4rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+}
+.pricing .box-container .box .price .amount{
+    font-size: 5.8rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+}
+.pricing .box-container .box .price .duration{
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.pricing .box-container .box ul{
+    margin: 0 auto 2.5rem;
+}
+.pricing .box-container .box ul li{
+    text-align: center;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    margin: 1rem auto;
+    color: var(--light-black);
+}
+.pricing .box-container .box ul li i{
+    color: var(--main-color);
+    padding: 0 1rem;
+}
+.pricing .box-container .box p{
+    font-size: 1.4rem;
+    color: var(--light-black);
+    margin: 2rem auto;
+    text-align: left;
+    padding-left: 3.8rem;
+}                      
                         
                     
