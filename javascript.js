@@ -24,7 +24,7 @@ nextButton.addEventListener('click', () => {
     changeSlide();
 });
 
-// Automatically change slides every 5 seconds
+// Automatically change slides every 5seconds
 setInterval(() => {
     currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
     changeSlide();
