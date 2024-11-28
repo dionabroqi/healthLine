@@ -1,4 +1,4 @@
-// JavaScript për funksionimin e slider-it
+// JavaScript për funksionin e slider-it
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
