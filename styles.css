@@ -133,6 +133,7 @@
 
 
 
+
  .about .row{
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +395,7 @@ body, .slider, .slide-content {
 }     
 /* pricing */
 .pricing{
-    background: var(--bg);
+    background: #f0e5d0;
     padding-bottom: 8rem;
 }
 .pricing .box-container{
