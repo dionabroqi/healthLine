@@ -29,3 +29,7 @@ setInterval(() => {
     currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
     changeSlide();
 }, 5000);
+
+    
+
+

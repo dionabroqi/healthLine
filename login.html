@@ -5,10 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Sign Up</title>
     <link rel="stylesheet" href="styles.css"> <!-- Lidhja me CSS -->
+    
 </head>
 <body>
-    
-    
+   <div class="Healthier" >
+<div class="form-box">
+<h1 id="tittle">Sign Up</h1>
+<form >
+<div class="input-group">
+
+    <div class="input-field" id="nameField">
+
+<input type="text" placeholder="Name">
+ </div>
+
+ <div class="input-field">
+ <input type="email" placeholder="Email">
+
+</div>
+
+
+
+<div class="input-field">
+<input type="password" placeholder="Password">
+</div>
+
+<p>Forgot password? <a href="#">Click Here!</p>
+
+</div>
+<div class="btn-field">
+
+<button type="button" id="signupBtn">Sign Up</button> 
+<button type="button" id="signinBtn" class="disable">Sign In</button>
+</div>
+
+</form>
+</div>
+</div>
+    <script>
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let tittle = document.getElementById("tittle");
+
+signinBtn.onclick = function () {
+    nameField.style.maxHeight = "0"; // Fsheh fushën e emrit
+    tittle.innerHTML = "Sign In"; // Ndryshon titullin
+    signupBtn.classList.add("disable"); // Bllokon butonin Sign Up
+    signinBtn.classList.remove("disable"); // Aktivizon butonin Sign In
+};
+
+signupBtn.onclick = function () {
+    nameField.style.maxHeight = "50px"; // Shfaq fushën e emrit
+    tittle.innerHTML = "Sign Up"; // Ndryshon titullin
+    signinBtn.classList.add("disable"); // Bllokon butonin Sign In
+    signupBtn.classList.remove("disable"); // Aktivizon butonin Sign Up
+};
+
+
+    </script>
 
 </body>
 </html>
