@@ -30,8 +30,8 @@
 <input type="password" placeholder="Password">
 </div>
 
-<p>Forgot password? <a href="#">Click Here!</p>
 
+<p id="forgotPassword" style="display: none;">Forgot password? <a href="#">Click Here!</a></p>
 </div>
 <div class="btn-field">
 
@@ -54,6 +54,7 @@ signinBtn.onclick = function () {
     tittle.innerHTML = "Sign In"; // Ndryshon titullin
     signupBtn.classList.add("disable"); // Bllokon butonin Sign Up
     signinBtn.classList.remove("disable"); // Aktivizon butonin Sign In
+    forgotPassword.style.display = "block"; // Shfaq "Forgot password"
 };
 
 signupBtn.onclick = function () {
@@ -61,6 +62,7 @@ signupBtn.onclick = function () {
     tittle.innerHTML = "Sign Up"; // Ndryshon titullin
     signinBtn.classList.add("disable"); // Bllokon butonin Sign In
     signupBtn.classList.remove("disable"); // Aktivizon butonin Sign Up
+    forgotPassword.style.display = "none"; // Fsheh "Forgot password"
 };
 
 
